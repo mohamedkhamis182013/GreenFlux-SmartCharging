@@ -11,8 +11,6 @@
 - Comment line 15 and uncomment line 16.
 - Run from your IDE.
 
-
-
 #Architecture and Tools
 - Clean architecture.
 - Repository and UnitOfWork. 
@@ -27,4 +25,6 @@
 - MOQ library 
 - Builder pattern 
 
-
+#Notes and points to enhance
+- expected id values for add are empty Guid value for guid Ids: "00000000-0000-0000-0000-000000000000" and for integar Id: 0.
+- Application doesn't have enough unit test and integration test.

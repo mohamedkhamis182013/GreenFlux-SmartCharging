@@ -94,6 +94,11 @@ namespace GreenFlux_SmartCharging.Application.Services
                 throw new NotFoundException("This connector is not exist");
             }
             var chargeStationDto = await _chargeStationService.GetByIdAsync(connectorDto.ChargeStationId);
+            if (!connector.ChargeStationId.Equals(connectorDto.ChargeStationId) &&
+                chargeStationDto.Connectors.Count == 5)
+            {
+                throw new DomainValidationException("can't assign connector to that chargeStation it already has 5 connectors");
+            }
             int newAmount = connectorDto.MaxCurrent - connector.MaxCurrent;
             var groupDto = await _groupService.GetByIdAsync(chargeStationDto.GroupId);
             var groupAvailableCapacity = _groupService.AvailableCapacity(groupDto);
