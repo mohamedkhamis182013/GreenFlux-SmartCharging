@@ -1,7 +1,6 @@
 ﻿using GreenFlux_SmartCharging.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GreenFlux_SmartCharging.Infrastructure.Persistence.Configurations;
 public class ChargeStationEntityConfiguration : IEntityTypeConfiguration<ChargeStation>

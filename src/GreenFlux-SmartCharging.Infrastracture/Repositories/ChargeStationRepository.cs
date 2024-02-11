@@ -24,7 +24,7 @@ public class ChargeStationRepository : Repository<ChargeStation>, IChargeStation
             return await DbContext.ChargeStations
             .Where(a => a.GroupId == groupId)
             .Include(a => a.Connectors)
-            .ToListAsync();
+            .AsNoTracking().ToListAsync();
         return null;
     }
     public async Task<ChargeStation?> GetByIdAsync(Guid id)
