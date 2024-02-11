@@ -12,8 +12,8 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-        //services.AddDbContext<AppDbContext>(o => o.UseSqlServer(configuration["ConnectionStrings:DB"]));
-        services.AddDbContext<AppDbContext>(o => o.UseInMemoryDatabase(configuration["ConnectionStrings:DB"]));
+        services.AddDbContext<AppDbContext>(o => o.UseSqlServer(configuration["ConnectionStrings:DB"]));
+        //services.AddDbContext<AppDbContext>(o => o.UseInMemoryDatabase(configuration["ConnectionStrings:DB"]));
         services.AddScoped<IGroupRepository, GroupRepository>();
         services.AddScoped<IConnectorRepository, ConnectorRepository>();
         services.AddScoped<IChargeStationRepository, ChargeStationRepository>();

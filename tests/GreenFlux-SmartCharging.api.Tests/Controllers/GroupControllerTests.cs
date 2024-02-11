@@ -25,5 +25,20 @@ namespace GreenFlux_SmartCharging.api.Tests.Controllers
 
             actualResult.Should().BeOfType<OkResult>();
         }
+
+        [Fact]
+        public async Task CreateAsync_WhenModelIsNotValid_ShouldReturnOKResult()
+        {
+            var group1 = new GroupBuilder()
+                .WithId(Guid.NewGuid())
+                .WithCapacity(500)
+                .Build();
+            var groupDto = group1.ToGroupDto();
+            var groupServiceMock = new Mock<IGroupService>();
+            var sut = new GroupController(groupServiceMock.Object);
+            var actualResult = await sut.CreateAsync(groupDto);
+
+            actualResult.Should().BeOfType<BadRequestObjectResult>();
+        }
     }
 }
