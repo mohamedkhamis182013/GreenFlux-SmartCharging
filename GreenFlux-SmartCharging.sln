@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{30292FBC-9B99-46F1-AF41-D04589E605DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.api", "src\GreenFlux-SmartCharging.api\GreenFlux-SmartCharging.api.csproj", "{A599AD3B-689A-46E1-A342-2FF9D38A2D1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3412FFF3-DC6B-41FA-A4E1-C002171A2875}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Application", "src\GreenFlux-SmartCharging.Application\GreenFlux-SmartCharging.Application.csproj", "{BCE1DFEB-6AA7-4CDF-BBA0-C33845EE464C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Application.Tests", "tests\GreenFlux-SmartCharging.Application.Tests\GreenFlux-SmartCharging.Application.Tests.csproj", "{B02B3EBC-22AA-46C9-89CB-95BE4AA34AAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Domain", "src\GreenFlux-SmartCharging.Domain\GreenFlux-SmartCharging.Domain.csproj", "{6BD8B90D-D40A-4589-95B4-11D9A91C1493}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Infrastructure", "src\GreenFlux-SmartCharging.Infrastracture\GreenFlux-SmartCharging.Infrastructure.csproj", "{BAE138E6-7DBB-425B-880C-B229BEFA7187}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Domain.Tests", "tests\GreenFlux-SmartCharging.Domain.Tests\GreenFlux-SmartCharging.Domain.Tests.csproj", "{5DDCE94A-BF67-4BF0-AA7A-31FDDC626250}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Infrastracture.Tests", "tests\GreenFlux-SmartCharging.Infrastracture.Tests\GreenFlux-SmartCharging.Infrastracture.Tests.csproj", "{6B53159D-FA19-4D95-BAE8-7856DFB7D8EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Integration.Tests", "tests\GreenFlux-SmartCharging.Integration.Tests\GreenFlux-SmartCharging.Integration.Tests.csproj", "{173FD2D4-B97E-43C3-A465-C40D95F9132D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenFlux-SmartCharging.Tests.Common", "tests\GreenFlux-SmartCharging.Tests.Common\GreenFlux-SmartCharging.Tests.Common.csproj", "{AFD1D431-BCEE-4D98-82B3-AC87A2CD0CF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{A98A4AEA-2E84-4FC9-BA7C-3E4A93C1258B}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		DEV_Smart_Charging_Assignment_v19.pdf = DEV_Smart_Charging_Assignment_v19.pdf
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenFlux-SmartCharging.api.Tests", "tests\GreenFlux-SmartCharging.api.Tests\GreenFlux-SmartCharging.api.Tests.csproj", "{1C3D6041-0BE5-411D-8E40-66EC1A61C294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A599AD3B-689A-46E1-A342-2FF9D38A2D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A599AD3B-689A-46E1-A342-2FF9D38A2D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A599AD3B-689A-46E1-A342-2FF9D38A2D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A599AD3B-689A-46E1-A342-2FF9D38A2D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE1DFEB-6AA7-4CDF-BBA0-C33845EE464C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE1DFEB-6AA7-4CDF-BBA0-C33845EE464C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE1DFEB-6AA7-4CDF-BBA0-C33845EE464C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE1DFEB-6AA7-4CDF-BBA0-C33845EE464C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B02B3EBC-22AA-46C9-89CB-95BE4AA34AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02B3EBC-22AA-46C9-89CB-95BE4AA34AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02B3EBC-22AA-46C9-89CB-95BE4AA34AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02B3EBC-22AA-46C9-89CB-95BE4AA34AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD8B90D-D40A-4589-95B4-11D9A91C1493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD8B90D-D40A-4589-95B4-11D9A91C1493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD8B90D-D40A-4589-95B4-11D9A91C1493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD8B90D-D40A-4589-95B4-11D9A91C1493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE138E6-7DBB-425B-880C-B229BEFA7187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE138E6-7DBB-425B-880C-B229BEFA7187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE138E6-7DBB-425B-880C-B229BEFA7187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE138E6-7DBB-425B-880C-B229BEFA7187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDCE94A-BF67-4BF0-AA7A-31FDDC626250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDCE94A-BF67-4BF0-AA7A-31FDDC626250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDCE94A-BF67-4BF0-AA7A-31FDDC626250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDCE94A-BF67-4BF0-AA7A-31FDDC626250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B53159D-FA19-4D95-BAE8-7856DFB7D8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B53159D-FA19-4D95-BAE8-7856DFB7D8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B53159D-FA19-4D95-BAE8-7856DFB7D8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B53159D-FA19-4D95-BAE8-7856DFB7D8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{173FD2D4-B97E-43C3-A465-C40D95F9132D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173FD2D4-B97E-43C3-A465-C40D95F9132D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173FD2D4-B97E-43C3-A465-C40D95F9132D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173FD2D4-B97E-43C3-A465-C40D95F9132D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD1D431-BCEE-4D98-82B3-AC87A2CD0CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD1D431-BCEE-4D98-82B3-AC87A2CD0CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD1D431-BCEE-4D98-82B3-AC87A2CD0CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD1D431-BCEE-4D98-82B3-AC87A2CD0CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3D6041-0BE5-411D-8E40-66EC1A61C294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3D6041-0BE5-411D-8E40-66EC1A61C294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3D6041-0BE5-411D-8E40-66EC1A61C294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3D6041-0BE5-411D-8E40-66EC1A61C294}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A599AD3B-689A-46E1-A342-2FF9D38A2D1D} = {30292FBC-9B99-46F1-AF41-D04589E605DA}
+		{BCE1DFEB-6AA7-4CDF-BBA0-C33845EE464C} = {30292FBC-9B99-46F1-AF41-D04589E605DA}
+		{B02B3EBC-22AA-46C9-89CB-95BE4AA34AAF} = {3412FFF3-DC6B-41FA-A4E1-C002171A2875}
+		{6BD8B90D-D40A-4589-95B4-11D9A91C1493} = {30292FBC-9B99-46F1-AF41-D04589E605DA}
+		{BAE138E6-7DBB-425B-880C-B229BEFA7187} = {30292FBC-9B99-46F1-AF41-D04589E605DA}
+		{5DDCE94A-BF67-4BF0-AA7A-31FDDC626250} = {3412FFF3-DC6B-41FA-A4E1-C002171A2875}
+		{6B53159D-FA19-4D95-BAE8-7856DFB7D8EE} = {3412FFF3-DC6B-41FA-A4E1-C002171A2875}
+		{173FD2D4-B97E-43C3-A465-C40D95F9132D} = {3412FFF3-DC6B-41FA-A4E1-C002171A2875}
+		{AFD1D431-BCEE-4D98-82B3-AC87A2CD0CF2} = {3412FFF3-DC6B-41FA-A4E1-C002171A2875}
+		{1C3D6041-0BE5-411D-8E40-66EC1A61C294} = {3412FFF3-DC6B-41FA-A4E1-C002171A2875}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C292ADD8-A5A3-4798-B47E-3859388A061A}
+	EndGlobalSection
+EndGlobal
